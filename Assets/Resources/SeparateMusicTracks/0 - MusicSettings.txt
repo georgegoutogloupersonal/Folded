@@ -1,0 +1,7 @@
+MainTrack - This track is to play throughout the whole game
+The following track are to start playing at 0 volume once explore is selected
+SlowSpeedGuitar - Volume to increase once planes speed is at 20%
+SlowSpeedBass - Volume to increase once planes speed is at 30% 
+HighSpeedGuitar - Volume to increase once planes speed is at 50%
+HighspeedBass - Volume to increase once planes speed is at 50%
+HighSpeedSynt - Volume to increase once planes speed is at 50%

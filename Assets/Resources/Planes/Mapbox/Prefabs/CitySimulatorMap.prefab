@@ -1,0 +1,689 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1290224484336908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4187505068457818}
+  - component: {fileID: 114196496685157712}
+  m_Layer: 0
+  m_Name: CitySimulatorMap
+  m_TagString: Building
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4187505068457818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290224484336908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114196496685157712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290224484336908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd961b1c9541a4cee99686069ecce852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _options:
+    locationOptions:
+      latitudeLongitude: -37.8182735, 144.9659255
+      zoom: 16
+    extentOptions:
+      extentType: 1
+      defaultExtents:
+        cameraBoundsOptions:
+          camera: {fileID: 0}
+          visibleBuffer: 0
+          disposeBuffer: 0
+        rangeAroundCenterOptions:
+          west: 3
+          north: 3
+          east: 3
+          south: 3
+        rangeAroundTransformOptions:
+          targetTransform: {fileID: 0}
+          visibleBuffer: 0
+          disposeBuffer: 0
+    placementOptions:
+      placementType: 1
+      snapMapToZero: 1
+    scalingOptions:
+      scalingType: 0
+      unityTileSize: 100
+    loadingTexture: {fileID: 2800000, guid: e2896a92727704803a9c422b043eae89, type: 3}
+    tileMaterial: {fileID: 2100000, guid: b9f23e9bce724fa4daac57ecded470b8, type: 2}
+  _initializeOnStart: 1
+  _imagery:
+    _layerProperty:
+      sourceType: 6
+      sourceOptions:
+        isActive: 1
+        layerSource:
+          Name: Streets
+          Id: mapbox://styles/zucchini/ck9tftnr30g0m1iqte0pddyb2
+          Modified: 
+          UserName: 
+      rasterOptions:
+        useRetina: 1
+        useCompression: 0
+        useMipMap: 0
+  _terrain:
+    _layerProperty:
+      sourceType: 0
+      sourceOptions:
+        isActive: 1
+        layerSource:
+          Name: 
+          Id: mapbox.terrain-rgb
+          Modified: 
+          UserName: 
+      elevationLayerType: 0
+      requiredOptions:
+        exaggerationFactor: 0
+      colliderOptions:
+        addCollider: 0
+      modificationOptions:
+        sampleCount: 10
+        useRelativeHeight: 0
+        earthRadius: 1000
+      unityLayerOptions:
+        addToLayer: 0
+        layerId: 0
+      sideWallOptions:
+        isActive: 0
+        wallHeight: 10
+        wallMaterial: {fileID: 0}
+  _vectorData:
+    _layerProperty:
+      tileJsonData:
+        tileJSONLoaded: 0
+        LayerDisplayNames:
+        - admin
+        - aeroway
+        - airport_label
+        - barrier_line
+        - building
+        - country_label
+        - housenum_label
+        - landuse
+        - landuse_overlay
+        - marine_label
+        - motorway_junction
+        - mountain_peak_label
+        - place_label
+        - poi_label
+        - rail_station_label
+        - road
+        - road_label
+        - state_label
+        - water
+        - water_label
+        - waterway
+        - waterway_label
+      _sourceType: 0
+      sourceOptions:
+        isActive: 1
+        layerSource:
+          Name: Mapbox Terrain
+          Id: mapbox.3d-buildings,mapbox.mapbox-streets-v7
+          Modified: 
+          UserName: 
+      useOptimizedStyle: 0
+      optimizedStyle:
+        Name: 
+        Id: 
+        Modified: 
+        UserName: 
+      performanceOptions:
+        isEnabled: 1
+        entityPerCoroutine: 20
+      vectorSubLayers:
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Buildings
+          geometryType: 2
+          layerName: building
+          snapToTerrain: 1
+          combineMeshes: 1
+        lineGeometryOptions:
+          Width: 1
+          MiterLimit: 0.2
+          RoundLimit: 1.05
+          JoinType: 1
+          CapType: 1
+        filterOptions:
+          _selectedLayerName: building
+          filters: []
+          combinerType: 0
+        extrusionOptions:
+          _selectedLayerName: building
+          extrusionType: 1
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: Number. Height of building or part of building.
+          minimumHeight: 0
+          maximumHeight: 1
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 2
+        materialOptions:
+          style: 1
+          texturingType: 3
+          materials:
+          - Materials:
+            - {fileID: 0}
+          - Materials:
+            - {fileID: 0}
+          atlasInfo: {fileID: 11400000, guid: 4df87964fe5004278acef942d9a878d4, type: 2}
+          lightStyleOpacity: 1
+          darkStyleOpacity: 1
+          colorStyleColor: {r: 0.1764706, g: 0.8509805, b: 1, a: 1}
+          samplePalettes: 0
+          colorPalette: {fileID: 11400000, guid: e1b79d6caac0144adada0c548ef06705,
+            type: 2}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 11400000, guid: 414754d7155df47beb52ca117a774f21,
+              type: 2}
+            colorPalette: {fileID: 11400000, guid: 57bdfa37edf7a4f7f999d19443497554,
+              type: 2}
+        performanceOptions:
+          isEnabled: 0
+          entityPerCoroutine: 0
+        honorBuildingIdSetting: 1
+        buildingsWithUniqueIds: 1
+        moveFeaturePositionTo: 0
+        MeshModifiers: []
+        GoModifiers:
+        - {fileID: 11400000, guid: 3a4d673afe909374b8e7146cedfd40e2, type: 2}
+        - {fileID: 11400000, guid: 4dedbcc9b965cb64f98eb895be7e4df4, type: 2}
+        - {fileID: 11400000, guid: 0087bb2c17ed31d478d3c57355a322db, type: 2}
+        - {fileID: 11400000, guid: 7b5acf8c247811847bb7331cd000cf98, type: 2}
+        - {fileID: 11400000, guid: c04c99e422fa41143ba7533ab0adf6c2, type: 2}
+        presetFeatureType: 0
+        _maskValue: 0
+        selectedTypes: 
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Water
+          geometryType: 2
+          layerName: water
+          snapToTerrain: 1
+          combineMeshes: 1
+        lineGeometryOptions:
+          Width: 1
+          MiterLimit: 0.2
+          RoundLimit: 1.05
+          JoinType: 1
+          CapType: 1
+        filterOptions:
+          _selectedLayerName: water
+          filters: []
+          combinerType: 0
+        extrusionOptions:
+          _selectedLayerName: water
+          extrusionType: 5
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: Number. Height of building or part of building.
+          minimumHeight: 0
+          maximumHeight: 1.1
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 2
+          materials:
+          - Materials:
+            - {fileID: 0}
+          - Materials:
+            - {fileID: 0}
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 1
+          darkStyleOpacity: 1
+          colorStyleColor: {r: 0.1764706, g: 0.8509805, b: 1, a: 1}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 2100000, guid: 69eb6e9be19a51a448b2b21ae74fdbf1, type: 2}
+            - Materials:
+              - {fileID: 2100000, guid: 69eb6e9be19a51a448b2b21ae74fdbf1, type: 2}
+            atlasInfo: {fileID: 11400000, guid: 414754d7155df47beb52ca117a774f21,
+              type: 2}
+            colorPalette: {fileID: 11400000, guid: 57bdfa37edf7a4f7f999d19443497554,
+              type: 2}
+        performanceOptions:
+          isEnabled: 0
+          entityPerCoroutine: 0
+        honorBuildingIdSetting: 1
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 0
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 4
+        _maskValue: 0
+        selectedTypes: 
+      locationPrefabList:
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Melbourne_Star
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 4779524010934166465, guid: a6c73850397b67c47a9490476fb5b40a,
+            type: 3}
+          scaleDownWithWorld: 1
+        findByType: 2
+        categories: -1
+        nameString: 
+        coordinates:
+        - -37.812069, 144.937358
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Federation_Square
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 8662649506144304268, guid: c8a37e13bda00a6478756f801e682664,
+            type: 3}
+          scaleDownWithWorld: 1
+        findByType: 2
+        categories: -1
+        nameString: 
+        coordinates:
+        - -37.817736, 144.969005
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Rialto_Tower
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 1428963523971849365, guid: 645490a2477f4014fa0b06a43095c719,
+            type: 3}
+          scaleDownWithWorld: 1
+        findByType: 2
+        categories: -1
+        nameString: Rialto
+        coordinates:
+        - -37.818697, 144.957581
+        density: 1
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Batman_Building
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 5496835817072052848, guid: 10f93e3075d3926479bbf4864078c944,
+            type: 3}
+          scaleDownWithWorld: 1
+        findByType: 2
+        categories: -1
+        nameString: Rialto
+        coordinates:
+        - -37.810833, 144.962092
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Arts_Center
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 2031432422076379610, guid: 98317bdb1c1c3fb44973b45f04ca850a,
+            type: 3}
+          scaleDownWithWorld: 1
+        findByType: 2
+        categories: -1
+        nameString: Rialto
+        coordinates:
+        - -37.821469, 144.968461
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Eureka_Tower
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 6768151385267524832, guid: 92dd92d9bf2d7784385061e534b3dcbd,
+            type: 3}
+          scaleDownWithWorld: 1
+        findByType: 2
+        categories: -1
+        nameString: Rialto
+        coordinates:
+        - -37.821694, 144.964672
+        density: 15
+  _tileProvider: {fileID: 0}
+  _previewOptions:
+    isPreviewEnabled: 0

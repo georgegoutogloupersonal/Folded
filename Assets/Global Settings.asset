@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87e94fb37f8c1544adc256b7f408fb9, type: 3}
+  m_Name: Global Settings
+  m_EditorClassIdentifier: 
+  GameModeScenes:
+  - Explore_Mode
+  - distance_mode
+  - time_mode
+  PlanePrefabs:
+  - {fileID: 4496211250516012920, guid: 3d3a7c3171aa7594b94df17a2ad3c69d, type: 3}
+  - {fileID: 5548948033314771646, guid: 61eabf54f1cd23342a944b16109621dd, type: 3}
+  - {fileID: 3526239819541957678, guid: 22a7a5fd7ea47b342835aef99821d5d1, type: 3}
+  - {fileID: 3526239819541957678, guid: b7209778bdbf1c14cb9598e3d2c95158, type: 3}
+  - {fileID: 4496211250516012920, guid: 7a78937e97b4b11408bd66c61fea5624, type: 3}
